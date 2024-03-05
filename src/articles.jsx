@@ -6,6 +6,7 @@ import { useState } from "preact/hooks";
 export function Articles() {
     let { data, isLoading, error } = useFetch(articlesUrl)
 
+    console.log(data);
     if (error) { return <div>Error!</div> }
     return isLoading ? (
         <div>Loading...</div>
@@ -44,14 +45,15 @@ function AddArticleForm(props) {
             body: JSON.stringify(postData)
         };
 
-        fetch(articlesUrl, requestOptions)
-            .then(_response => {
-                window.location.reload();
-            })
-            .catch(error => {
-                // Handle errors
-                console.error('Error:', error);
-            });
+        if (postData.title != "") {
+            fetch(articlesUrl, requestOptions)
+                .then(_response => {
+                    window.location.reload();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
     };
     const handleInputChange = (e) => {
         const { name, value } = e.target;

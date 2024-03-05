@@ -18,6 +18,8 @@ body {
 	display: flex;
 	align-items: center;
 	min-height: 100vh;
+	height: 100%;
+	overflow-y: hidden;
 }
 
 #app {
@@ -114,6 +116,22 @@ section {
 
 .addFeed .addButton {
 	float: right;
+}
+
+.addDevice .addButton {
+	float: right;
+}
+
+.deviceInput {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	width: 30%;
+}
+
+.deviceInput:focus {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	outline: none;
 }
 
 .feed {

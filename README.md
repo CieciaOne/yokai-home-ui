@@ -1,6 +1,10 @@
 # YOKAI HOME UI
 
-A web interface for yokai home software suite
+An extremly minimal dashboard
+
+It allows for managing RSS feeds, Markdown based articles and network devices allowing checking their status as well as waking them via Wake-on-LAN
+
+![demo](./demo.png)
 
 ### Prerequisites
 
@@ -10,5 +14,9 @@ You need to have those installed:
 - bun
 
 ### Usage
+
+```bash
+bun run dev
+```
 
 For instructons use bun --help
