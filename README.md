@@ -16,7 +16,10 @@ You need to have those installed:
 ### Usage
 
 ```bash
-bun run dev
+bun run --bun vite
 ```
 
-For instructons use bun --help
+For instructons use 
+```bash
+bun --help
+```
