@@ -83,7 +83,7 @@ function AddArticleForm(props) {
                 value={postData.article}
                 onChange={handleInputChange}
                 placeholder="Input article content..."></textarea>
-            <button class="addArticleButton" onClick={handleClick}>Add article</button>
+            <button class="addButton" onClick={handleClick}>Add article</button>
         </div >
     );
 }

@@ -1,18 +1,16 @@
 import { render } from 'preact';
 import './style.css';
 import { Articles } from './articles';
+import { Feed } from './feed';
 import { Network } from './network';
 
 
 export function App() {
 	return (
 		<div>
-			{/* <a href="https://preactjs.com" target="_blank">
-				<img src={preactLogo} alt="Preact logo" height="160" width="160" />
-			</a> */}
 			<h1>Yokai</h1>
 			<section>
-				{/* <Feed url={feedUrl} /> */}
+				<Feed />
 				<Articles />
 				<Network />
 			</section>

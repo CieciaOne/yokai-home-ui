@@ -78,16 +78,15 @@ section {
 	outline: none;
 }
 
-.addArticleButton {
+.addButton {
 	background-color: rgba(0, 0, 0, 0);
 	font-size: larger;
 	border: none;
+	font-weight: bolder;
 }
 
-.addArticleButton:hover {
-	/* font-weight: bolder; */
+.addButton:hover {
 	color: deeppink;
-	/* text-shadow: rgba(255, 0, 200, 0.5) 1px 0 10px; */
 }
 
 .deleteArticleButton {
@@ -106,8 +105,30 @@ section {
 
 .articles {
 	margin-bottom: 5em;
+	max-height: 0.9vh;
 }
 
+.addFeed {
+	text-align: left;
+}
+
+.addFeed .addButton {
+	float: right;
+}
+
+.feed {
+	height: 80%;
+	overflow-y: scroll;
+	margin-bottom: 5em;
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Firefox */
+}
+
+.feed::-webkit-scrollbar {
+	display: none;
+}
 
 .article {
 	text-align: left;
@@ -115,6 +136,29 @@ section {
 
 .articleHeading {
 	text-align: center;
+}
+
+.feedEntry {
+	text-align: left;
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+.feedEntry:hover {
+	color: deeppink;
+}
+
+.feedInput {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	width: 40%;
+}
+
+.feedInput:focus {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	outline: none;
 }
 
 @media (max-width: 639px) {
