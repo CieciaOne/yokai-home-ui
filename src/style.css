@@ -56,6 +56,53 @@ section {
 	box-shadow: 0 25px 50px -12px #673ab888;
 }
 
+.articleTitle {
+	text-align: center;
+	font-size: x-large;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+.articleContent {
+	font-size: larger;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+.articleTitle:focus {
+	outline: none;
+}
+
+.articleContent:focus {
+	outline: none;
+}
+
+.addArticleButton {
+	background-color: rgba(0, 0, 0, 0);
+	font-size: larger;
+	border: none;
+}
+
+.addArticleButton:hover {
+	/* font-weight: bolder; */
+	color: deeppink;
+	/* text-shadow: rgba(255, 0, 200, 0.5) 1px 0 10px; */
+}
+
+.articles {
+	margin-bottom: 5em;
+}
+
+
+.article {
+	text-align: left;
+}
+
+.article h2 {
+	text-align: center;
+}
+
 @media (max-width: 639px) {
 	#app {
 		margin: 2rem;
