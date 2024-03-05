@@ -90,6 +90,20 @@ section {
 	/* text-shadow: rgba(255, 0, 200, 0.5) 1px 0 10px; */
 }
 
+.deleteArticleButton {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+.deleteArticleButton:hover {
+	/* font-weight: bolder; */
+	color: deeppink;
+	text-decoration: line-through;
+	/* text-shadow: rgba(255, 0, 200, 0.5) 1px 0 10px; */
+}
+
 .articles {
 	margin-bottom: 5em;
 }
@@ -99,7 +113,7 @@ section {
 	text-align: left;
 }
 
-.article h2 {
+.articleHeading {
 	text-align: center;
 }
 

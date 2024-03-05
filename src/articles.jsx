@@ -22,7 +22,10 @@ function Article(props) {
     return (
         <div class="article">
             <hr></hr>
-            <h2>{props.title}</h2>
+            <div class="articleHeading">
+                <DeleteArticleButton
+                    title={props.title} id={props.id} />
+            </div>
             <Markdown>{props.body}</Markdown>
         </div>
     );
@@ -82,5 +85,28 @@ function AddArticleForm(props) {
                 placeholder="Input article content..."></textarea>
             <button class="addArticleButton" onClick={handleClick}>Add article</button>
         </div >
+    );
+}
+
+function DeleteArticleButton(props) {
+
+    const handleClick = () => {
+        const requestOptions = {
+            method: 'DELETE',
+        };
+
+        const url = articlesUrl + "/" + props.id
+        fetch(url, requestOptions)
+            .then(_response => {
+                window.location.reload();
+            })
+            .catch(error => {
+                // Handle errors
+                console.error('Error:', error);
+            });
+    };
+
+    return (
+        <button class="deleteArticleButton" onClick={handleClick}>{props.title}</button>
     );
 }
